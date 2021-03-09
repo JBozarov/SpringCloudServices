@@ -11,6 +11,7 @@ public class PaymentController {
 
     @GetMapping("/payNow/{price}")
     public String payNow(@PathVariable int price) {
-        return "Payment successful and the price is " + price;
+        return "payment with " + price + " is successfull";
     }
+
 }

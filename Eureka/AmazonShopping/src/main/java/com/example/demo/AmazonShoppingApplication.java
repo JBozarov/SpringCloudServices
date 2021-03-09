@@ -11,8 +11,8 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 public class AmazonShoppingApplication {
 
-	@Bean
 	@LoadBalanced
+	@Bean
 	public RestTemplate getTemplate() {
 		return new RestTemplate();
 	}
